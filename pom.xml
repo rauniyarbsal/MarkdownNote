@@ -8,7 +8,7 @@
 		<version>3.4.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.aguedamaiara.api</groupId>
+	<groupId>com.brauniyar.api</groupId>
 	<artifactId>MarkdownNote</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>MarkdownNote</name>

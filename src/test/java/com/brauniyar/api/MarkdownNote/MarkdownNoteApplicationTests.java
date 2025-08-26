@@ -1,4 +1,4 @@
-package com.aguedamaiara.api.MarkdownNote;
+package com.brauniyar.api.MarkdownNote;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

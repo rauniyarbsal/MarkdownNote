@@ -18,7 +18,6 @@ The goal is to provide a simple tool for managing and viewing Markdown notes, wh
 
 === Grammar Checking
 * LanguageTool (org.languagetool.languagetool-core 6.5) – Library for grammar analysis.
-* LanguageTool Portuguese (org.languagetool.language-pt 6.5) – Adds Portuguese language support for grammar checking.
 
 === Development Tools
 * Spring Boot DevTools – Improves development workflow with automatic application restarts.

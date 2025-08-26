@@ -1,7 +1,7 @@
-package com.aguedamaiara.api.MarkdownNote.controller;
+package com.brauniyar.api.MarkdownNote.controller;
 
 import ch.qos.logback.core.util.FileUtil;
-import com.aguedamaiara.api.MarkdownNote.dto.TextRequest;
+import com.brauniyar.api.MarkdownNote.dto.TextRequest;
 import com.vladsch.flexmark.html.HtmlRenderer;
 import org.apache.commons.io.FileUtils;
 import org.languagetool.JLanguageTool;

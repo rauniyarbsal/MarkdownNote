@@ -1,4 +1,4 @@
-package com.aguedamaiara.api.MarkdownNote.dto;
+package com.brauniyar.api.MarkdownNote.dto;
 
 public record TextRequest(String text) {
 

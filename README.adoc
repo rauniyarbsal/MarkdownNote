@@ -1,0 +1,93 @@
+= Markdown Notes-Taking App
+
+Challenge based on https://roadmap.sh/projects/markdown-note-taking-app[Markdown Notes].  
+This application allows users to upload Markdown files, check their grammar, save notes, and render them as HTML.  
+The goal is to provide a simple tool for managing and viewing Markdown notes, while also learning how to handle file uploads in a RESTful API.
+
+== Technologies Used
+
+=== Backend
+* Spring Boot 3.4.3 – Framework for building the REST API.
+* Java 21 – Programming language used for the backend.
+
+=== Markdown Processing
+* Flexmark (com.vladsch.flexmark 0.64.8) – Library for converting Markdown to HTML.
+
+=== File Handling
+* Apache Commons IO (commons-io 2.18.0) – Provides utilities for reading and writing files.
+
+=== Grammar Checking
+* LanguageTool (org.languagetool.languagetool-core 6.5) – Library for grammar analysis.
+* LanguageTool Portuguese (org.languagetool.language-pt 6.5) – Adds Portuguese language support for grammar checking.
+
+=== Development Tools
+* Spring Boot DevTools – Improves development workflow with automatic application restarts.
+* Spring Boot Starter Test – Library for running unit and integration tests.
+
+=== Build and Dependency Management
+* Maven – Tool for dependency management and project build.
+
+== Features
+
+The application provides the following features:
+
+. Grammar check – Endpoint to check the grammar of a Markdown note.
+. Save notes – Endpoint to store a Markdown note.
+. List notes – Endpoint to list saved notes (uploaded Markdown files).
+. Render notes – Endpoint to convert a Markdown note to HTML for viewing.
+
+== Endpoints
+
+=== 1. Check grammar
+* Description: Analyzes the Markdown text to identify grammar errors.
+* Method: POST
+* Route: /notes/check-grammar
+* Parameter: text (Markdown note content).
+
+=== 2. Save note
+* Description: Stores a Markdown note in the system.
+* Method: POST
+* Route: /notes/save
+* Parameter: text (Markdown note content).
+
+=== 3. List notes
+* Description: Returns a list of saved notes.
+* Method: GET
+* Route: /notes
+
+=== 4. Render note
+* Description: Converts a Markdown note to HTML for viewing.
+* Method: GET
+* Route: /notes/{id}
+* Parameter: {id} (identifier of the saved note).
+
+== Running the Project
+
+=== Requirements
+Before running the project, make sure you have installed:
+* Java 21
+* Maven
+
+=== Steps to Run
+. Clone the repository:
++
+[source,bash]
+----
+git clone https://github.com/aguedamaiara/MarkdownNote.git
+----
+
+. Navigate to the project folder:
++
+[source,bash]
+----
+cd MarkdownNote
+----
+
+. Build and run the application with Maven:
++
+[source,bash]
+----
+mvn spring-boot:run
+----
+
+. The application will be available at http://localhost:8080.
